@@ -12,7 +12,7 @@ In the notebook Structured_Data_Example.ipynb we include a tutorial of our metho
 7) The sensitive attribute labels (sens_train)
 8) A binary indicator (flag), that is true if class 1 is the privileged class and false otherwise
    
-It performs an update for both the model parameters $\boldsymbol{\theta}$ as well as the binary variables $\boldsymbol{z}$ and returns the error and the new value for $\boldsymbol{z}$. In order to run the notebook the following parameters need to be specified:
+It performs an entire epoch, updating both the model parameters $\boldsymbol{\theta}$ as well as the binary variables $\boldsymbol{z}$ and returns the error and the new value for $\boldsymbol{z}$. In order to run the notebook the following parameters need to be specified:
 1) The total number of epochs (num_epochs)
 2) The learning rate for the model parameters (lr_theta)
 3) The learning rate for the binary variables (lr_z)
@@ -29,7 +29,7 @@ In the notebook Unstuctured_Data_Example.ipynb we include a tutorial of our meth
 5) The target labels (y_train)
 6) A binary indicator (flag), that is true if class 1 is the privileged class and false otherwise
    
-It performs an update for both the model parameters $\boldsymbol{\theta}$ as well as the binary variables $\boldsymbol{z}$ and returns the error and the new value for $\boldsymbol{z}$. In order to run the notebook the following parameters need to be specified:
+It performs an entire epoch, updating both the model parameters $\boldsymbol{\theta}$ as well as the binary variables $\boldsymbol{z}$ and returns the error and the new value for $\boldsymbol{z}$. In order to run the notebook the following parameters need to be specified:
 1) The target attribute
 2) The sensitive attribute
 3) The total number of epochs (num_epochs)
