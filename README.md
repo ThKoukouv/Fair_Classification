@@ -1,5 +1,5 @@
 ## Code for our paper "Interpretable algorithmic fairness in structured and unstructured data"
-Our method changes the training of a classifier by adding binary variables ($\boldsymbol{z}$) to encode label flips. During a batch update at each epoch, we update both the model parameters and the $\boldsymbol{z}$ variables. At the end of an epoch we solve a MIO problem to project to the set of binary variables. 
+Our method changes the training of a classifier by adding binary variables ($\boldsymbol{z}$) to encode label flips. During a batch update at each epoch, we update both the model parameters $\boldsymbol{\theta}$ and the binary variables $\boldsymbol{z}$. At the end of an epoch we solve a MIO problem to project to the set of binary variables. 
 
 ## Structured data tutorial
 In the notebook Structured_Data_Example.ipynb we include a tutorial of our method on the LSAC dataset for tabular data classification. The folder lsac within the folder Data contains the train and test data. The function epoch_manual_str(train_loader, model, z0_train, X_train_moments, X_train, y_train, sens_train, flag) performs an epoch for structured data and takes the following mandatory inputs: 
